@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inventry.css">
+
+    <title>Inventory App</title>
+</head>
+
+<body>
+<div class="make-flex">
+
+    <div class="container">
+        <form id="form">
+            <h1>Inventory Management System</h1>
+                
+            <div id="errormsg"></div>
+                <div class="input-control">
+                    <label for="account">Account</label>
+
+                    <select name="account" id="account" >
+                      <option value="" selected>Select your method</option>
+                      <option value="Cash" >&#128178; Cash</option>
+                      <option value="Card">	&#128179; Card</option>
+                      <option value="Bank Account">&#127974; Bank Account</option>
+                    </select> 
+            </div>
+
+
+            <div class="input-control">
+                <label for="Category">Category</label>
+
+                <select name="Category" id="category">
+                    <option value="" selected>Select your category</option>
+                    <option value="Food" >&#x1F372; Food</option>
+                    <option value="Household">&#127968; Household</option>
+                    <option value="Pet">&#128021; Pets</option>
+                    <option value="Transport">&#128663; Transport</option>
+                    <option value="Health">	&#127973; Health </option>
+                    <option value="Gift"> &#x1f381; Gift </option>
+                    <option value="Others"> Others </option>
+                  </select> 
+        </div>
+    
+        <div class="input-control">
+            <label for="amount">Amount</label>
+            <input id="amount" name="amount" type="text" >
+        </div>
+
+
+        <div class="input-control">
+            <label for="note">Note</label>
+            <input id="note" name="note" type="text" >
+    </div>
+
+
+    <div class="input-control btn-flex">
+<input id="sub-btn" type="button" value="submit" class="save-btn" >
+
+
+<input id="rst-btn" type="reset" value="reset" class="reset-btn">
+
+
+</div>
+    </div>
+
+
+<div class=" result-div">
+<h2>All Expenses</h2>
+
+<hr>
+
+<table  id="table">
+
+    <tr>
+
+    <td class="col" id="df">Account</td>
+    <td class="col">Category</td>
+    <td class="col">Amount</td>
+    <td class="col">Note</td>
+    <td class="col">Action</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+</div>
+
+
+<script src="inventry.js"></script>
+</body>
+
+</html>
+
+
+
+
